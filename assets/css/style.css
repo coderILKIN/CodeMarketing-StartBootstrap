@@ -1,0 +1,178 @@
+nav {
+  background-color: rgba(44, 62, 80) !important;
+  height: 100px;
+}
+
+nav .navbar-brand {
+  font-size: 32px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white !important;
+}
+
+#banner img {
+  width: 240px;
+  height: 254px;
+}
+
+#banner {
+  padding: 50px 0px;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.banner-container h1 {
+  font-size: 70px !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.banner-container p {
+  font-size: 24px;
+}
+
+.icon {
+  font-size: 30px;
+  position: relative;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 4px;
+  top: 50%;
+  right: 150%;
+  background-color: white;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 4px;
+  top: 50%;
+  left: 150%;
+  background-color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#portfolio .port-image {
+  height: 288px;
+}
+
+#portfolio .port-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.port-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.port-image i {
+  display: none;
+}
+
+.port-image:hover i {
+  position: absolute;
+  top: 110px;
+  left: 180px;
+  font-size: 60px;
+  z-index: 1;
+  color: white;
+  display: block;
+}
+
+.port-image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.iconn {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 30px;
+}
+
+.left {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+}
+
+.right {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+}
+
+#portfolio h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about .about-text-left,
+#about .about-text-right {
+  width: 33%;
+  font-size: 20px;
+}
+
+#about {
+  background-color: #1abc9c;
+  color: white;
+  padding: 60px 0px;
+}
+
+#about h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about h2,
+i,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#about a {
+  padding: 14px 30px;
+  border: 2px solid white;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+#about i {
+  margin-right: 5px;
+}
+
+#about a:hover {
+  background-color: white;
+  color: black;
+}
+#about a:hover i {
+  color: black;
+}
