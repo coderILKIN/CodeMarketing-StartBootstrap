@@ -1,3 +1,11 @@
+/* Header Start */
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
 nav {
   background-color: rgba(44, 62, 80) !important;
   height: 100px;
@@ -17,7 +25,16 @@ nav ul li {
 
 nav ul li a {
   color: white !important;
+  font-weight: 500 !important;
 }
+
+nav ul li a:hover {
+  color: #1abc9c !important;
+}
+
+/* Header End */
+
+/* Banner Start */
 
 #banner img {
   width: 240px;
@@ -64,9 +81,13 @@ nav ul li a {
   background-color: white;
 }
 
+/* Banner End */
+
 body {
   overflow-x: hidden;
 }
+
+/* Portfolio Start */
 
 #portfolio .port-image {
   height: 288px;
@@ -79,16 +100,16 @@ body {
   border-radius: 7px;
 }
 
-.port-image {
+#portfolio .port-image {
   position: relative;
   cursor: pointer;
 }
 
-.port-image i {
+#portfolio .port-image i {
   display: none;
 }
 
-.port-image:hover i {
+#portfolio .port-image:hover i {
   position: absolute;
   top: 110px;
   left: 180px;
@@ -98,7 +119,7 @@ body {
   display: block;
 }
 
-.port-image:hover::after {
+#portfolio .port-image:hover::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -132,6 +153,14 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+#portfolio i {
+  color: black;
+}
+
+/* Portfolio End */
+
+/* About Start */
 
 #about .about-text-left,
 #about .about-text-right {
@@ -175,4 +204,140 @@ a {
 }
 #about a:hover i {
   color: black;
+}
+
+/* About End */
+
+/* Contact Start */
+
+#contact form {
+  width: 50%;
+  color: rgb(185, 166, 166);
+}
+
+#contact form input {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid rgb(185, 166, 166);
+  padding: 25px 0px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+#contact form textarea {
+  border: none;
+  min-height: 100px;
+  border-radius: 0px;
+  font-size: 25px;
+  padding: 25px 0px;
+  border-bottom: 1px solid rgb(185, 166, 166);
+}
+
+#contact .form-btn {
+  padding: 15px 25px;
+  background-color: #1abc9c;
+  opacity: 0.7;
+  border: none;
+}
+
+#contact .iconn i {
+  color: black;
+}
+
+#contact h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+/* Contact End */
+
+/* Footer Start */
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  font-size: 20px;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+footer ul li a:hover {
+  background-color: white;
+}
+
+footer ul li a:hover i {
+  color: black;
+}
+
+.footer-end {
+  background-color: #1a252f;
+}
+
+/* Footer End */
+
+@media screen and (max-width: 1200px) {
+  #contact form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav .navbar-brand {
+    font-size: 20px !important;
+  }
+
+  #banner h1 {
+    font-size: 40px !important;
+  }
+
+  #banner p {
+    font-size: 20px;
+  }
+
+  #about h2 {
+    font-size: 35px;
+  }
+
+  .about-text {
+    flex-direction: column;
+  }
+
+  .about-text p {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  footer p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  footer h4 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact form {
+    width: 100%;
+  }
 }
